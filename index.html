@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm Salsa Anggraini, a illustrator with a passion for creating amazing things.</p>
+        <button>Learn More</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Saya siswa SMK Muhammadiyah 1 Sukoharjo tahun ajaran 2022/2023. Saya mempunyai ketertarikan pada bidang ilustrasi 2 dimensi. Saya juga bergabung dengan kelompok minat desain ilustrasi di sekolah. Dengan masa PKL ini saya ingin meningkatkan kemampuan saya agar menjadi lebih baik lagi.</p>
+        <img src="img/mine.jpeg" alt="Profile Picture">
+    </section>
+
+    <!-- Projects Section -->
+    <h2>My Projects</h2>
+    <div class="p"><p>( Click the picture for better experience )</p></div>
+    <section id="projects" col-5>
+        
+    <div class="img-wrapper">
+        <div class="card">
+            <div class="card-image">
+                <a href="img/example maskot robot pplg.jpeg"><img class="image" src="img/example maskot robot pplg.jpeg" alt="Project 1" width="100%" height="130px" ></a>
+            </div>
+            <div class="category"> Illustration </div>
+            <div class="heading"> An example robotic mascot of pplg
+                <div class="author"> By <span class="name">Salsa</span></div>
+            </div>
+        </div>
+    </div> <!--img wrapper-->
+    <div class="img-wrapper">
+        <div class="card">
+            <div class="card-image">
+                <a href="img/logo es pisang ijo.jpeg"><img src="img/logo es pisang ijo.jpeg" alt="Project 2" width="100%" height="130px"></a>
+            </div>
+            <div class="category"> Illustration </div>
+            <div class="heading"> An icon of 'es pisang ijo' stall
+                <div class="author"> By <span class="name">Salsa</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="img-wrapper">
+        <div class="card">
+            <div class="card-image">
+                <a href="img/smoothies pt 1.jpeg"><img src="img/smoothies pt 1.jpeg" alt="Project 3" width="100%" height="130px"></a>
+            </div>
+            <div class="category"> Illustration </div>
+            <div class="heading"> An icon of 'kiwi smoothies' from blendtopia
+                <div class="author"> By <span class="name">Salsa</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="img-wrapper">
+        <div class="card">
+            <div class="card-image">
+                <a href="img/smoothies pt 2.jpeg"><img src="img/smoothies pt 2.jpeg" alt="Project 4" width="100%" height="130px"></a>
+            </div>
+            <div class="category"> Illustration </div>
+            <div class="heading"> An icon of brand smoothies; blendtopia
+                <div class="author"> By <span class="name">Salsa</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="img-wrapper">
+        <div class="card">
+            <div class="card-image">
+                <a href="img/first time try on coloring (this illustration is not mine).jpeg"><img src="img/first time try on coloring (this illustration is not mine).jpeg" alt="Project 5" width="100%" height="130px"></a>
+            </div>
+            <div class="category"> Illustration </div>
+            <div class="heading"> First time try on coloring (this illustration is not mine anyways)
+                <div class="author"> By <span class="name">Salsa</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="img-wrapper">
+        <div class="card">
+            <div class="card-image">
+                <a href="img/beach at spring season.jpeg"><img src="img/beach at spring season.jpeg" alt="Project 6" width="100%" height="130px"></a>
+            </div>
+            <div class="category"> Illustration </div>
+            <div class="heading"> A beach at spring season
+                <div class="author"> By <span class="name">Salsa</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="img-wrapper">
+        <div class="card">
+            <div class="card-image">
+                <a href="img/beach at summer season.jpeg"><img src="img/beach at summer season.jpeg" alt="Project 7" width="100%" height="130px"></a>
+            </div>
+            <div class="category"> Illustration </div>
+            <div class="heading"> A beach at summer season
+                <div class="author"> By <span class="name">Salsa</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="img-wrapper">
+        <div class="card">
+            <div class="card-image">
+                <a href="img/mountain.jpeg"><img src="img/mountain.jpeg" alt="Project 8" width="100%" height="130px"></a>
+            </div>
+            <div class="category"> Illustration </div>
+            <div class="heading"> A mountain view from the cliff
+                <div class="author"> By <span class="name">Salsa</span></div>
+            </div>
+        </div>
+    </div>        
+
+    </section>
+
+    <!-- Contact Section -->
+    <div class="content contact-content">
+        <h1>Contact Us</h1>
+        <form action="submit_contact.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
